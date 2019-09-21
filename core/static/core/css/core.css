@@ -1,0 +1,300 @@
+.message {
+    font-weight: 600;
+    color: black;
+}
+
+input[name=message] {
+    width: 80%;
+}
+.navbar {
+    background-color:rgb(0, 0, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+    text-align: center;
+    margin-bottom: 0;
+    z-index: 9999;
+    border: 0;
+    font-size: 14px !important;
+    /* line-height: 1.42857143 !important; */
+    letter-spacing: 2px;
+    border-radius: 0;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  }
+
+  .navbar-nav li a:hover, .navbar-nav li a.active {
+    color: #070707 !important;
+    background-color: #fff !important;
+  }
+
+.jumbotron{
+ 
+    margin: 0px;
+    text-align: center;
+    background-color:transparent;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+}
+
+.message_list{
+  width: 500px;
+  text-align: center;
+  border-collapse: collapse; 
+    border-spacing: 0;
+    color: #070707;
+    
+}
+.message_list th {  
+  background: #DFDFDF;  /* Darken header a bit */
+  font-weight: bold;
+  
+}
+
+.message_list th,td {
+    padding-right: 15px;
+    border: 1px solid black; 
+    height: 30px; 
+    transition: all 0.3s; 
+}
+
+.message_list  tr:nth-child(even) td { background: #F1F1F1; }   
+
+/* Cells in odd rows (1,3,5...) are another (excludes header cells)  */        
+.message_list  tr:nth-child(odd) td { background: #FEFEFE; } 
+
+.message_list tr td:hover { background: rgb(150, 150, 150);}
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative; /* required */
+    padding-top: 60px;
+    /* background-image: url("/static/core/images/bgg.jpg"); */
+    background-color:black;
+    color: rgb(243, 241, 241);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+
+  }
+
+  #aboutus{
+    text-align: left;
+    color: black;
+    background-color: azure;
+    padding: 20px;
+    opacity: 0.8;
+  }
+  
+  .footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    color: rgb(250, 246, 246);
+    line-height: 60px;
+    background-color:transparent;
+    text-align: center;
+}
+
+.loginhome{
+    width: 300px;
+}
+
+.signuphome{
+    width: 500px;
+}
+
+.floatingNav {
+	background-color:#0e0e0e;
+    transition: background-color 1s ease-out;
+	border-radius: 0px;
+	box-shadow: 0px 2px 10px #999;
+} 
+
+.carousel{
+    height: 200px;
+    text-align: center;
+    padding: 50px;
+}
+
+#carousel{
+    padding: 20px 0 0 0;
+}
+
+#contact{
+    color: black;
+    background-color: azure;
+    opacity: 0.8;
+    padding: 25px;
+}
+
+#proser{
+    padding: 25px;
+}
+
+
+#contact i{ vertical-align: middle !important; }
+
+#portfolio{
+    color: black;
+    background-color: azure;
+    opacity: 0.8;
+    padding: 25px;
+}
+.logo-small {
+    font-size: 50px;
+  }
+
+  .logo {
+    font-size: 160px;
+  }
+
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border-radius: 1px;
+  }
+
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+
+  .thumbnail:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+    transition: all 200ms ease-in;
+    transform: scale(1.1);
+  }
+
+
+.slideanim {visibility:hidden;}
+.slide {
+  /* The name of the animation */
+  animation-name: slide;
+  -webkit-animation-name: slide; 
+  /* The duration of the animation */
+  animation-duration: 1s; 
+  -webkit-animation-duration: 1s;
+  /* Make the element visible */
+  visibility: visible; 
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  } 
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  } 
+}
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  } 
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+
+#scrollBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color:darkslategray ; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 50%; /* Rounded corners */
+}
+
+
+#scrollBtn:hover {
+    background-color:grey; /* Add a dark-grey background on hover */
+}
+
+#scatter{
+  height: 500px;
+  background-color: #eee;
+  color: #111;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#soup-nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 32px;
+  z-index: 9002;
+  font-size: 64px;
+}
+.soup-title {
+  font-size: 32px;
+}
+.soup-desc {
+  font-size: 16px;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+
+}
+#soup-container {
+  width: 100%;
+  height: 500px;
+  min-width: 320px;
+  min-height: 480px;
+  position: relative;
+}
+.letters-wrap {
+  position: absolute;
+  overflow: hidden;
+  display: inline-block;
+}
+.letters-wrap.mutable {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.letters-wrap.mutable .letter {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: left 2s, top 2s, color 2s;
+  color: "#AAA";
+}
+.letters-wrap.mutable .letter.active {
+  color: "#111";
+  z-index: 9001;
+}
+.letters-wrap.position-data {
+  top: 50%;
+  left: 50%;
+  /*opacity: 0.1;*/
+  visibility: hidden;
+  transform: translate(-50%, -50%);
+}
+.segment {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.letter {
+  display: inline-block;
+}
+button {
+  z-index: 9001;
+  position: relative;
+}

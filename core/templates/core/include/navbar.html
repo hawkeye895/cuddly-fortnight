@@ -1,0 +1,55 @@
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navBar">
+               
+        <a class="navbar-brand" href="{% url 'core:visitor' %}">MCO</a>
+        <!-- <a class="navbar-brand" href="#index">MCO</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navCollapse">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navCollapse">
+
+                <ul class="navbar-nav mr-auto">
+                        {% if user.is_authenticated %}
+                        <li class="nav-item">
+                                <a class="nav-link" href="{% url 'core:home' %}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="{% url 'core:log' %}">Log Message</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="{% url 'core:contact' %}">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                                        <a class="nav-link" href="{% url 'user:profile' %}">Profile</a>
+                                </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="{% url 'user:logout' %}">Logout</a>
+                        </li>
+                        {% else %}
+                        <li class="nav-item">
+                                <!-- <a class="nav-link" href="{% url 'core:about' %}">About</a> -->
+                                <a class="nav-link" href="#aboutus">About</a>
+                        </li>
+                                                <li class="nav-item">
+                                <a class="nav-link" href="#proser">Services</a>
+                                </li>
+                        <li class="nav-item">
+                                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                                <!-- <a class="nav-link" href="{% url 'core:contact' %}">About</a> -->
+                                <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+
+                        <li class="nav-item">
+                                <a class="nav-link" href="{% url 'user:signup' %}">Sign Up</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="{% url 'user:signin' %}">Log In</a>
+                        </li>
+                        {% endif %}
+                </ul>
+        </div>
+</nav>
+<button class="btn btn-primary arrow up" onclick="topFunction()" id="scrollBtn" title="Top"> <span><i class="material-icons">
+                keyboard_arrow_up
+                </i></span></button>
