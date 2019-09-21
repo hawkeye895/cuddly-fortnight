@@ -8,6 +8,9 @@ from chatterbot import ChatBot
 from chatterbot.ext.django_chatterbot import settings
 
 
+def chat(request):
+    return render(request, 'chatbot/chat.html', {})
+
 class ChatterBotAppView(TemplateView):
     template_name = 'chatbot/app.html'
     
