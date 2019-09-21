@@ -6,10 +6,16 @@ from django.views.generic import View
 from django.http import JsonResponse
 from chatterbot import ChatBot
 from chatterbot.ext.django_chatterbot import settings
-
+from django.utils.safestring import mark_safe
 
 def chat(request):
     return render(request, 'chatbot/chat.html', {})
+
+def room(request, room_name):
+    return render(request, 'chatbot/room.html', {
+        'room_name_json': mark_safe(json.dumps(room_name))
+    })
+
 
 class ChatterBotAppView(TemplateView):
     template_name = 'chatbot/app.html'
