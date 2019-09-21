@@ -43,6 +43,7 @@ CHANNEL_LAYERS = {
 
 INSTALLED_APPS = [
     'channels',
+    'blog',
     'core',
     'user',
     'chatbot',
