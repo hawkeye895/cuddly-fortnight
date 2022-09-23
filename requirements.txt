@@ -58,7 +58,7 @@ pipenv==2018.11.26
 plac==0.9.6
 plotly==4.1.0
 preshed==2.0.1
-protobuf==3.9.1
+protobuf==3.18.3
 psycopg2==2.8.3
 pyasn1==0.4.6
 pyasn1-modules==0.2.6
